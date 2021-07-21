@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <h1>Humans in Space</h1>
+    <div class="buttonHolder"><button type="button" onclick="toggleText()">How many people are in space?</button></div>
+    <div id="num" style="display: none;">
+        <h2>There are currently <span id = "SpacePeople"></span> people in space.</h2> 
+        <div id="rocket"></div>
+        <div class="buttonHolder"><button type="button" onclick="toggleText2()">Who are the astronauts?</button></div>
+    </div>
+    <div id="names" style="display: none;">
+        <div class="center"><ul>
+            <li id="astroNames"></li>
+        </ul></div>
+        <div class="buttonHolder"><button type="button" onclick="toggleText3()">Where are they stationed? (Respectively)</button></div>
+    </div>
+    <div id="craft" style="display: none;">
+        <div class="center"><ul>
+            <li id="astroCraft"></li>
+        </ul></div>
+    </div>
+</body>
+</html>
