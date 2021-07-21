@@ -1,0 +1,59 @@
+h1 {
+    background-image: url(stars.jpg);
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body {
+    background-image: url(galaxy.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.buttonHolder {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    background-image: url(stars.jpg);
+    color: white;
+    font-weight: bold;
+    border: 5px solid black;
+}
+
+.center {
+    margin-top: 50px;
+    text-align: center;
+}
+
+li {
+    color: white;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+    margin: 5px; 
+}
+
+
+h2 {
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#rocket {
+    text-align: center;
+}
+
+#rocket img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
