@@ -1,15 +1,36 @@
 
-$.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
-    var number = data['number'];
-    $('#SpacePeople').html(number);
+// $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
+
+//     var number = space['number'];
+//     $('#SpacePeople').html(number);
+
+//     var img = document.createElement("img");
+//     img.src = "rocket.webp";
+//     var src = document.getElementById("rocket");
+//     src.appendChild(img);
+   
+//     space['people'].forEach(function (d) {
+//         $('#astroNames').append('<li>' +  d['name'] + '</li>');
+//     });
+
+//     space['people'].forEach(function (d) {
+//         $('#astroCraft').append('<li>' + d['craft']+ '</li>');
+//     });
+// });
+
+// New local JSON
+$.getJSON("space.json", function(data) {
+  
+  var number = data['number'];
+  $('#SpacePeople').html(number);
 
     var img = document.createElement("img");
     img.src = "rocket.webp";
     var src = document.getElementById("rocket");
     src.appendChild(img);
-   
+
     data['people'].forEach(function (d) {
-        $('#astroNames').append('<li>' + d['name']+ '</li>');
+        $('#astroNames').append('<li>' +  d['name'] + '</li>');
     });
 
     data['people'].forEach(function (d) {
